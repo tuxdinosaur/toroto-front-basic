@@ -1,0 +1,32 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* LOG */
+.log__container {
+  background: #6D6875;
+  padding: 20px;
+}
+
+.log__container--tabs {
+  justify-content: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #ffffff;
+  background-color: #CE8C6D;
+  background-color: transparent;
+  border-bottom: 5px solid #CE8C6D;
+  border-radius: 0;
+}
+
+.log__container--tabs .nav-link {
+  color: rgba(255, 255, 255,0.5);
+  border-bottom: 5px solid transparent;
+  border-radius: 0;
+  transition: all 0.5s ease;
+}
+
+.log__container--tabs .nav-link:hover {
+  color: rgba(255, 255, 255,1);
+}
