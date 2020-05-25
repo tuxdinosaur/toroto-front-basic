@@ -95,4 +95,19 @@ body {
 .log__container--tabs .nav-link:hover {
   color: white;
 }
+
+.tab-register__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form-control {
+  border: none;
+  color: #fff;
+  background-color: #4f4d53;
+}
 /*# sourceMappingURL=main.css.map */

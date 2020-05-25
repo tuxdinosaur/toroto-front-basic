@@ -17,7 +17,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">toroto</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Ayuda</a>
+          <a class="nav-link active" href="#">Ayuda</a>
         </li>
       </ul>
     </div>
@@ -81,11 +81,71 @@
 
             <!-- TABS CONTENT -->
             <div class="tab-content" id="pills-tabContent">
+
+              <!-- TAB REGISTRO -->
               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                Registro
+
+                <label for="basic-url">Nombre</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+
+                <label for="basic-url">Apellido</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                </div>
+
+                <label for="basic-url">Correo electrónico</label>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                </div>
+
+                <label for="basic-url">Contraseña</label>
+                <div class="input-group mb-3">
+                  <input type="password" class="form-control" placeholder="" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                </div>
+
+                <label for="basic-url">Elige un plan</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Básico</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Pro</label>
+                </div>
+
+                <div class="tab-register__button">
+                  <button type="button" class="btn btn-light">Crear cuenta</button>
+                </div>
+
               </div>
+
+              <!-- TAB LOGIN -->
               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                Inicio de sesión
+
+                <label for="basic-url">Correo electrónico</label>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="" aria-label="Correo electrónico"
+                    aria-describedby="basic-addon1">
+                </div>
+
+                <label for="basic-url">Contraseña</label>
+                <div class="input-group mb-3">
+                  <input type="password" class="form-control" placeholder="" aria-label="Contraseña"
+                    aria-describedby="basic-addon2">
+                </div>
+
+                <div class="tab-register__button">
+                  <button class="btn btn-light" type="button">Inicia sesión</button>
+                </div>
+
               </div>
             </div>
 
