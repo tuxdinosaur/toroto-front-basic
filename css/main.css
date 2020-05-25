@@ -71,9 +71,12 @@ body {
           justify-content: center;
 }
 
+.log__container--tabs > li {
+  padding: 10px 15px;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #ffffff;
-  background-color: #CE8C6D;
   background-color: transparent;
   border-bottom: 5px solid #CE8C6D;
   border-radius: 0;
@@ -85,6 +88,8 @@ body {
   border-radius: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  padding: 0;
+  padding-bottom: 5px;
 }
 
 .log__container--tabs .nav-link:hover {
