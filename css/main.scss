@@ -19,13 +19,15 @@ body {
   background: url('../assets/img/wil-stewart.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  // opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
+  // height: 100vh;
+  // min-height: 656px;
+  // min-height: 700px;
 }
 
 .container-fluid::after {
@@ -33,10 +35,11 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  // min-height: 656px;
   z-index: -1;
   opacity: 0.45;
 }
@@ -57,6 +60,21 @@ body {
   font-weight: 400;
 }
 
+/* CONTAINER */
+
+.home {
+  // height: calc(100vh - 56px);
+  display: flex;
+  // margin-top: 32px;
+  // margin-bottom: 32px;
+}
+
+.home__section {
+  align-items: center;
+  // border: 1px solid red;
+  padding: 20px 0;
+}
+
 /* DESCRIPTION */
 
 .description-title {
@@ -72,6 +90,11 @@ body {
   font-weight: 700;
 }
 
+.description-text {
+  color: #ffffff;
+  font-size: 16px;
+}
+
 /* LOG */
 .log__container {
   background: rgb(116, 110, 126);
@@ -85,7 +108,7 @@ body {
 }
 
 .log__container--tabs > li {
-  padding: 10px 15px;
+  padding: 10px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -117,4 +140,42 @@ body {
   border: none;
   color: #fff;
   background-color: #4f4d53;
+}
+
+@media only screen and (min-height: 600px) {
+  .home {
+    height: calc(100vh - 56px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .home {
+    margin-top: 0;
+    margin-bottom: 0;
+    // min-height: 600px;
+  }
+
+  .description-title {
+    font-size: 32px;
+  }
+
+  .description-text {
+    font-size: 18px;
+  }
+  
+}
+
+@media only screen and (min-width: 992px) {
+
+  .description-title {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .description-title {
+    font-size: 56px;
+  }
 }
